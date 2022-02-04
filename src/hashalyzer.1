@@ -1,0 +1,30 @@
+.\" Manpage for Hashalyzer
+
+.TH man 8 "04 Feb 2022" "2.0" "Hashalyzer manual page"
+.SH NAME
+Hashalyzer \- Hash algorithm identification
+.SH SYNOPSIS
+Hashalyzer [HASH]
+.SH DESCRIPTION
+Hashalyzer is a hash identification program. It works by extracting two main characteristics about the the hash and comparing it to characteristics of hashes produced by different hashing algorithms stored in a local database. Then, it prints the matches sorted by popularity. The popularity of each hashing algorithm is determined by web search result numbers in comparison to other hashes with the same characteristcs.
+
+.B
+If your hash includes a dollar sign ($), make sure you place it in between quotes.
+
+
+Send missing hashes at
+.I
+<nt@ntaheij.dev>
+or contribute to the github project:
+.I
+https://github.com/ntaheij/hashalyzer
+
+.SH OPTIONS
+-h	display help panel & exit
+
+-l	list supported hashing algorithms
+.SH AUTHOR
+Noah Taheij
+
+.SH LICENSE
+GNU Public License 3.0+ (GPL-3.0+)
